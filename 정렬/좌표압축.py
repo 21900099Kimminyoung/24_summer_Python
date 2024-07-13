@@ -1,3 +1,4 @@
+# https://wikidocs.net/16043
 import sys
 n = int(sys.stdin.readline().strip())
 X = list(map(int,sys.stdin.readline().split()))
@@ -8,5 +9,5 @@ for i in X1:
     X1[i] = con
     con+=1
 for i in range(n):
-    X[i] = X1[X[i]]
+    X[i] = X1[X[i]] # key 로 접근 하는 것
 print(*X)
