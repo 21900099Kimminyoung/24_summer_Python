@@ -11,8 +11,8 @@ T = int(sys.stdin.readline().strip())
 
 for i in range(2,num):
     if prime[i]:
-        for i in range(i*2,num,i):
-            prime[i] = False
+        for j in range(i*2,num,i):
+            prime[j] = False
 
 for i in range(T):
     count = 0
